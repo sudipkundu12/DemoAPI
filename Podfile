@@ -10,6 +10,7 @@ target 'DemoAPI' do
   pod 'SwiftyJSON'
 
   pod 'SVProgressHUD'
+  pod 'ObjectMapper'
 
   target 'DemoAPITests' do
     inherit! :search_paths

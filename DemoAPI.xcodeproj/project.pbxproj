@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		010618D025AA6ABDC30C5BB7 /* Pods_DemoAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A815F3ACBBB48EA97893248 /* Pods_DemoAPIUITests.framework */; };
 		160E4BA057BAFC2E3F5420C3 /* Pods_DemoAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19AB72E73A89DBA221734F3E /* Pods_DemoAPI.framework */; };
+		903C2977226242E400465FCE /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C2976226242E300465FCE /* Json4Swift_Base.swift */; };
 		9044A6F3225E4F28004EA0B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044A6F2225E4F28004EA0B5 /* AppDelegate.swift */; };
 		9044A6F5225E4F28004EA0B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044A6F4225E4F28004EA0B5 /* ViewController.swift */; };
 		9044A6F8225E4F28004EA0B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9044A6F6225E4F28004EA0B5 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		552FFF9BEAED1E8F0D72CC8F /* Pods-DemoAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAPITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoAPITests/Pods-DemoAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 		89F426BFB9785EAF20B62728 /* Pods-DemoAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoAPI/Pods-DemoAPI.release.xcconfig"; sourceTree = "<group>"; };
 		8AC2F539550C3209C608D719 /* Pods_DemoAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		903C2976226242E300465FCE /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4Swift_Base.swift; sourceTree = "<group>"; };
 		9044A6EF225E4F28004EA0B5 /* DemoAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9044A6F2225E4F28004EA0B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9044A6F4225E4F28004EA0B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				9044A6F2225E4F28004EA0B5 /* AppDelegate.swift */,
+				903C2976226242E300465FCE /* Json4Swift_Base.swift */,
 				9044A6F4225E4F28004EA0B5 /* ViewController.swift */,
 				9044A72B225E4FC1004EA0B5 /* Fonts */,
 				9044A728225E4FC1004EA0B5 /* NetworkManager */,
@@ -390,6 +393,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DemoAPI/Pods-DemoAPI-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -400,6 +404,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -463,6 +468,7 @@
 				9044A737225E4FC1004EA0B5 /* NetworkManager.swift in Sources */,
 				9044A731225E4FC1004EA0B5 /* AlertHelper.swift in Sources */,
 				9044A6F5225E4F28004EA0B5 /* ViewController.swift in Sources */,
+				903C2977226242E400465FCE /* Json4Swift_Base.swift in Sources */,
 				9044A735225E4FC1004EA0B5 /* CoustomView.swift in Sources */,
 				9044A738225E4FC1004EA0B5 /* NetworkApiService.swift in Sources */,
 				9044A6F3225E4F28004EA0B5 /* AppDelegate.swift in Sources */,

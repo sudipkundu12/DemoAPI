@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import ObjectMapper
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         NetworkManager.requestWithoutToken(target: .userLogin(email:"kundu.sudip@gmail.com", password:"rets" , grant_type: ""), success: { (response) in
             print(response)
+            // Convert JSON String to Model
+            let responseModel =  Mapper<Json4Swift_Base>().map(JSONString: response.rawString()!)
+            // Create JSON String from Model
+           // let JSONString = Mapper().toJSONString(responseModel, prettyPrint: true)
+            print(responseModel?.error_description)
             if response["error_description"].string != nil {
                 AlertHelper.showAlertWithTitle(self, title: (response["error_description"].string)!, dismissButtonTitle: "OK", dismissAction: {
                     return
